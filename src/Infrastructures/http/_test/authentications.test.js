@@ -345,3 +345,10 @@ describe('/authentications endpoint', () => {
     });
   });
 });
+
+// contoh: tests/example.test.js
+describe('Dummy test for CI', () => {
+  it('should fail for CI demo', () => {
+    expect(1 + 1).toBe(3); // SENGAJA SALAH
+  });
+});
