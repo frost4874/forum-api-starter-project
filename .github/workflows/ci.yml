@@ -12,7 +12,7 @@ jobs:
       postgres:
         image: postgres:16
         env:
-          POSTGRES_DB: forum_api_test
+          POSTGRES_DB: forumapi
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: admin
         ports:
@@ -26,9 +26,9 @@ jobs:
     env:
       PGHOST: localhost
       PGPORT: 5432
-      PGDATABASE: forum_api_test
+      PGDATABASE: forumapi
       PGUSER: postgres
-      PGPASSWORD: postgres
+      PGPASSWORD: admin
       NODE_ENV: test
 
     steps:
